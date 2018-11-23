@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
-import photo from "../../images/denis.jpg";
+import photo from "../../images/photo.jpg";
 
-import styles from "./Home.css";
+import styles from "./HomePage.css";
 
-class Home extends Component {
+class HomePage extends Component {
   render() {
     return (
       <main>
         <section className={styles.container}>
-          <img src={photo} />
+          <img src={photo} className={styles.photo} />
           <h2>Denis Krasnov</h2>
         </section>
       </main>
@@ -17,4 +17,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomePage;
