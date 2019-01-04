@@ -1,0 +1,61 @@
+.Arrows {
+  position: absolute;
+  color: rgb(16, 155, 252);
+  font-size: 20px;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow_1 {
+  transform: rotate(-60deg);
+}
+.arrow_2 {
+  transform: rotate(-97deg);
+}
+.arrow_3 {
+  transform: rotate(-101deg);
+}
+.arrow_4 {
+  transform: rotate(-90deg);
+}
+.arrow_5 {
+  transform: rotate(-136deg);
+}
+.arrow_6 {
+  transform: rotate(161deg);
+}
+.arrow_7 {
+  transform: rotate(173deg);
+}
+.arrow_8 {
+  transform: rotate(196deg);
+}
+.arrow_9 {
+  transform: rotate(143deg);
+}
+.arrow_10 {
+  transform: rotate(169deg);
+}
+.arrow_11 {
+  transform: rotate(216deg);
+}
+.arrow_12 {
+  transform: rotate(320deg);
+}
+.arrow_13 {
+  transform: rotate(106deg);
+}
+.arrow_14 {
+  transform: rotate(77deg);
+}
+.arrow_15 {
+  transform: rotate(207deg);
+}
+.arrow_16 {
+  transform: rotate(176deg);
+}
+.arrow_17 {
+  transform: rotate(176deg);
+}

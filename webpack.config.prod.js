@@ -22,6 +22,7 @@ module.exports = {
             options: {
               sourceMap: true,
               modules: true,
+              localIdentName: "[local]--[hash:base64:5]",
             },
           },
         ],

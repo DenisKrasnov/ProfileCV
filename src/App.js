@@ -11,16 +11,14 @@ import CVpage from "./pages/CVpage";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Router>
-          <div>
-            <Nav />
-            <Route path="/" exact component={HomePage} />
-            <Route path="/skills" component={SkillsPage} />
-            <Route path="/cv-viewer" component={CVpage} />
-          </div>
-        </Router>
-      </div>
+      <Router>
+        <>
+          <Nav />
+          <Route path="/" exact component={HomePage} />
+          <Route path="/skills" component={SkillsPage} />
+          <Route path="/cv-viewer" component={CVpage} />
+        </>
+      </Router>
     );
   }
 }

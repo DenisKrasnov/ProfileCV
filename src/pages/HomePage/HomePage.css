@@ -1,13 +1,22 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.HomePage {
+  background: url("../../images/bckgr-image.jpg");
+  height: 50vh;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: -2px;
+}
+
+.owner {
   position: absolute;
-  top: 50%;
-  margin-top: -185px;
+  bottom: 100px;
+  width: 620px;
 }
 
 .photo {
-  width: 20%;
-  border-radius: 100%;
+  width: 280px;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 0.5em;
+  shape-outside: circle();
 }

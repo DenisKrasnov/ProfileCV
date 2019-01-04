@@ -1,0 +1,17 @@
+.Header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 26px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  width: 54%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}

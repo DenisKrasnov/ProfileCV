@@ -1,7 +1,25 @@
-.list {
-  list-style-type: none;
+.SkillsPage {
+  max-width: 1050px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
-.item {
-  display: inline;
+.headers {
+  font-weight: bold;
+}
+
+.skillsWrapper {
+  position: absolute;
+  font-family: "Inconsolata", monospace;
+}
+
+.svgLine {
+  stroke: rgb(16, 155, 252);
+}
+
+.circle {
+  fill: rgb(16, 155, 252);
 }
