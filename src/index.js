@@ -1,19 +1,10 @@
+import "@babel/polyfill";
+import "normalize.css/normalize.css";
+import "./initial.css";
+
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloProvider } from "react-apollo";
-import ApolloClient from "apollo-boost";
-import "@babel/polyfill";
-
-import "normalize.css/normalize.css";
 
 import App from "./App";
-import "./App.css";
 
-const client = new ApolloClient();
-
-ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));

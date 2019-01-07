@@ -1,9 +1,9 @@
 .HomePage {
   background: url("../../images/bckgr-image.jpg");
-  height: 50vh;
-  padding: 10px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50vh;
+  padding: 10px;
   margin-right: -2px;
 }
 
