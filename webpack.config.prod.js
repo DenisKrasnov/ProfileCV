@@ -7,8 +7,8 @@ module.exports = {
   devtool: "source-map",
   entry: ["./src/index.js"],
   output: {
-    path: path.resolve(__dirname, "public/build"),
-    publicPath: "/public/",
+    path: path.resolve(__dirname, "build"),
+    publicPath: "/",
     filename: "bundle.js",
   },
   module: {

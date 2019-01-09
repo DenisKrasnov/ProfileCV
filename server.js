@@ -143,7 +143,7 @@ if (isDevelopment) {
     res.sendFile(path.join(__dirname, "/public/index.html"));
   });
 } else {
-  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.static(path.join(__dirname, "/")));
 }
 
 app.listen(app.get("port"));
