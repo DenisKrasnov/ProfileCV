@@ -5,9 +5,10 @@
   "author": "denis",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "prod": "serve -s build",
-    "heroku-postbuild": "npm run build",
+    "dev": "NODE_ENV=production node server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "webpack --config ./webpack.config.prod.js --progress --colors",
     "build": "webpack --config ./webpack.config.prod.js --progress --colors",
     "lint": "./node_modules/.bin/eslint src",
     "prettier": "prettier --write \"**/*.js\""
@@ -50,6 +51,7 @@
     "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
+    "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
     "react": "^16.6.0",
@@ -58,5 +60,9 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "serve": "^10.1.1"
+  },
+  "engines": {
+    "node": "11.6.0",
+    "yarn": "1.12.3"
   }
 }

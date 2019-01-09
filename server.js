@@ -91,13 +91,7 @@ const root = {
 
 const app = express();
 
-const webpack = require("webpack");
-const webpackDevMiddleware = require("webpack-dev-middleware");
-const webpackHotMiddleware = require("webpack-hot-middleware");
-const config = require("./webpack.config.dev");
 const chalk = require("chalk");
-
-const compiler = webpack(config);
 
 const DEFAULT_PORT = 3001;
 const PORT = process.env.PORT || DEFAULT_PORT;
@@ -125,6 +119,12 @@ app.use(
 );
 
 if (isDevelopment) {
+  const webpack = require("webpack");
+  const webpackDevMiddleware = require("webpack-dev-middleware");
+  const webpackHotMiddleware = require("webpack-hot-middleware");
+  const config = require("./webpack.config.dev");
+
+  const compiler = webpack(config);
   app.use(
     webpackDevMiddleware(compiler, {
       publicPath: config.output.publicPath,
@@ -143,7 +143,10 @@ if (isDevelopment) {
     res.sendFile(path.join(__dirname, "/public/index.html"));
   });
 } else {
-  app.use(express.static(path.join(__dirname, "/")));
+  app.use(express.static(path.join(__dirname, "build")));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "public1/index.html"));
+  });
 }
 
 app.listen(app.get("port"));
