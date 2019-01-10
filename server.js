@@ -91,14 +91,14 @@ const root = {
 
 const app = express();
 
-const chalk = require("chalk");
-
 const DEFAULT_PORT = 3001;
 const PORT = process.env.PORT || DEFAULT_PORT;
 
 app.set("port", PORT);
 
 if (PORT === DEFAULT_PORT) {
+  const chalk = require("chalk");
+
   console.log(`
  ${chalk.bgHex("#224dff").white("--- ReactJS ---")}
  Starting server on port 3001
