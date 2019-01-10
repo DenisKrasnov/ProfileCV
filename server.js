@@ -140,12 +140,12 @@ if (isDevelopment) {
   app.use(webpackHotMiddleware(compiler));
 
   app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/index.html"));
+    res.sendFile(path.join(__dirname, "build/index.html"));
   });
 } else {
   app.use(express.static(path.join(__dirname, "build")));
   app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "public1/index.html"));
+    res.sendFile(path.join(__dirname, "build/index.html"));
   });
 }
 

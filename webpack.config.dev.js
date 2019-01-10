@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const chalk = require("chalk");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -55,5 +56,9 @@ module.exports = {
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebPackPlugin({
+      template: "./public/index.html",
+      filename: "./index.html",
+    }),
   ],
 };

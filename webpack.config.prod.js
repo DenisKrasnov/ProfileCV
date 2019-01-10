@@ -53,7 +53,7 @@ module.exports = {
       "process.env.NODE_ENV": JSON.stringify("production"),
     }),
     new HtmlWebPackPlugin({
-      template: "./public1/index.html",
+      template: "./public/index.html",
       filename: "./index.html",
     }),
   ],
