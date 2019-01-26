@@ -27,9 +27,11 @@ module.exports = {
             options: {
               sourceMap: true,
               modules: true,
+              importLoaders: 1,
               localIdentName: "[local]--[hash:base64:5]",
             },
           },
+          "postcss-loader",
         ],
       },
       {
