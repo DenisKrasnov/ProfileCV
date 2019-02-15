@@ -1,2 +1,3 @@
-# ReactJS-boilerplate
-A boilerplate for React Apps.
+# Resume website
+
+COMING SOON
