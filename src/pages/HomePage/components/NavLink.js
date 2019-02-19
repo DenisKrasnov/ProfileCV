@@ -30,7 +30,7 @@ class NavLink extends Component {
     return (
       <div onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
         <Link to={to} className={styles.link}>
-          {!isHovered ? (
+          {isHovered ? (
             <div className={styles.linkNameWrapper}>
               <span className={styles.linkName}>{routeName}</span>
             </div>
