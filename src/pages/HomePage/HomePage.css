@@ -7,16 +7,29 @@
   margin-right: -2px;
 }
 
-.owner {
+.container {
   position: absolute;
-  bottom: 100px;
-  width: 620px;
+  top: 57%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 760px;
+  margin-top: -225px;
+  margin-left: -380px;
+}
+
+.introduction {
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.header {
+  margin: 0 0 20px 0;
 }
 
 .photo {
   width: 280px;
-  float: left;
-  margin-right: 2em;
-  margin-bottom: 0.5em;
-  shape-outside: circle();
+  margin-bottom: 20px;
 }

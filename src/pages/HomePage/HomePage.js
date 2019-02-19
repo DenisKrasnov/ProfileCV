@@ -2,16 +2,18 @@ import React, { Component } from "react";
 
 import photo from "../../images/cutmypic.png";
 
+import HomeNav from "./components/HomeNav";
 import styles from "./HomePage.css";
 
 class HomePage extends Component {
   render() {
     return (
       <main className={styles.HomePage}>
-        <section className={styles.owner}>
+        <HomeNav />
+        <section className={styles.container}>
           <img src={photo} className={styles.photo} />
-          <h2>Denis Krasnov</h2>
-          <p>
+          <h2 className={styles.header}>Denis Krasnov</h2>
+          <p className={styles.introduction}>
             Welcome to my portfolio. My name is Denis Krasnov. Born in Moldova,
             currently reside in the Netherlands. Ambitious and passionate about
             development. I like working in a agile, highly motivated team. I

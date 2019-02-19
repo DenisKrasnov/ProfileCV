@@ -1,0 +1,14 @@
+.HomeNav {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  padding-left: 0;
+  list-style-type: none;
+}
